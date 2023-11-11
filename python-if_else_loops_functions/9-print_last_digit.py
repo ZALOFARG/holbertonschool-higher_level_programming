@@ -5,3 +5,7 @@ def print_last_digit(number):
         print(number % 10, end="")
     else:
         print(number % 10, end="")
+    return number % 10
+
+if __name__ == '__main__':
+    print_last_digit()
