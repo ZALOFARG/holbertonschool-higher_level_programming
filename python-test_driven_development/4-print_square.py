@@ -1,8 +1,10 @@
 #!/usr/bin/python3
 """This module will be used to print a square based on its parameter"""
+
+
 def print_square(size):
     """
-    print_square: function that prints to the stdout a square with dimension 'size'
+    print_square: prints to the stdout a square with dimension 'size'
 
     Args:
         size(int): linear dimension of the square
