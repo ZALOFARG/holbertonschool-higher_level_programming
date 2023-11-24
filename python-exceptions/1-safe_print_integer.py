@@ -2,12 +2,14 @@
 def safe_print_integer(value):
     try:
         if value == True or value == False:
-            raise Exception
+            raise TypeError
         else:
             print("{:d}". format(value))
             return True
-    except Exception:
-        return 0
+    except TypeError:
+        return False
+    except ValueError:
+        return False
 
 
 if __name__ == '__main__':
