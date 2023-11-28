@@ -11,12 +11,15 @@ class Rectangle:
 
     def __str__(self):
         """printing the symbol '#' with the H-W parameters"""
-        for i in range(self.__height):
-            for _ in range(self.__width):
-                print('#', end='')
-            if i != (self.__height - 1):
-                print()
-        return ""
+        if self.__width == 0 or self.__height == 0:
+            return ""
+        else:
+            for i in range(self.__height):
+                for _ in range(self.__width):
+                    print('#', end='')
+                if i != (self.__height - 1):
+                    print()
+            return ""
 
     @property
     def width(self):
