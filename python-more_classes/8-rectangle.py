@@ -13,6 +13,7 @@ class Rectangle:
         self.__class__.number_of_instances += 1
 
     def __del__(self):
+        """destructor method to destroy instances"""
         print("Bye rectangle...")
         self.__class__.number_of_instances -= 1
 
@@ -65,7 +66,7 @@ class Rectangle:
         return self.__width * self.__height
 
     def perimeter(self):
-        """funciton returning the perimeter of the rectangle"""
+        """function returning the perimeter of the rectangle"""
         if self.__width == 0 or self.__height == 0:
             return 0
         else:
@@ -73,6 +74,7 @@ class Rectangle:
     
     @staticmethod
     def bigger_or_equal(rect_1, rect_2):
+        """static method that compares two instances"""
         if not isinstance(rect_1, Rectangle):
             raise TypeError("rect_1 must be an instance of Rectangle")
         if not isinstance(rect_2, Rectangle):
