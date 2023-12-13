@@ -1,9 +1,13 @@
 #!/usr/bin/python3
-"""asd"""
+"""this module will handle I/O"""
 
 
 def read_file(filename=""):
-    """asd"""
+    """func that reads a file"""
     with open(filename, 'r', encoding="utf-8") as f:
         content = f.read()
         print(content.strip(), end='')
+
+
+if __name__ == '__main__':
+    read_file(filename="")
