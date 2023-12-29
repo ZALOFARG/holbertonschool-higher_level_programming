@@ -1,6 +1,11 @@
 #!/usr/bin/python3
 """this module will displays all values in the states
 table of hbtn_0e_0_usa where name matches the argument
+example of use:
+    ./2-my_filter_states.py <username> 
+                            <password> 
+                            <db>
+                            <string searched>
 """
 
 import MySQLdb
