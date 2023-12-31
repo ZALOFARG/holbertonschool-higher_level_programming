@@ -2,6 +2,7 @@
 """this module will define a class then work with it"""
 BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
+
 class Rectangle(BaseGeometry):
     """working with a class"""
     def __init__(self, width, height):
