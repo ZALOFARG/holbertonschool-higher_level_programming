@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 """In this module we would work operating with lists"""
+
+
 def matrix_divided(matrix, div):
     """Divides all elements of a matrix.
 
