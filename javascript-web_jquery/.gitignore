@@ -1,0 +1,13 @@
+# compiled outputs
+dist/
+build/
+bin/
+
+# dependencies
+node_modules/
+
+# env files
+.env
+
+#others
+*main.html
